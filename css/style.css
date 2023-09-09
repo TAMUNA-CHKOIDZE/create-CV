@@ -1,0 +1,392 @@
+.container1 {
+    width: 100%;
+    height: 100vh;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #ece4d9 0%, #e9dfd1 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* პირველი გვერდის მთავარი ტექსტი  */
+.create_resume {
+    text-transform: uppercase;
+    font-size: 6rem;
+    text-align: center;
+    color: #f1ebe5;
+    text-shadow: 0 8px 9px #c4b59d, 0px -2px 1px #fff;
+    font-weight: bold;
+    word-spacing: 20px;
+}
+
+/* ღილაკი  */
+.btn_box {
+    width: 400px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: linear-gradient(to bottom, #dcd4c9 0%, #d6ccbd 100%);
+    box-shadow: -10px -10px 10px #f3efec,
+        13px 13px 15px #9a8f7c,
+        inset -5px -5px 5px #f1eeea,
+        inset 5px 5px 5px #9a8f7c;
+}
+
+.cv_link {
+    width: 85%;
+    height: 70%;
+}
+
+.added_cv {
+    width: 100%;
+    height: 100%;
+    color: #f1ebe5;
+    background: #f1ebe5;
+    text-shadow: 0 5px 5px #847966, 0px -2px 1px #fff;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    box-shadow: inset -5px -5px 7px #bdb5ad,
+        inset 5px 5px 7px #fff;
+}
+
+.added_cv:active {
+    text-shadow: 0 1px 1px #847966;
+    box-shadow: -10px -10px 10px #f3efec,
+        13px 13px 15px #9a8f7c,
+        inset -5px -5px 5px #f1eeea,
+        inset 5px 5px 5px #9a8f7c;
+}
+
+
+
+
+/* piradi-ifo.html  */
+.container2 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #ece4d9 0%, #e9dfd1 100%);
+    /* border: 10px solid red; */
+}
+
+.form_display_sections {
+    width: 100%;
+    /* height: 90%; */
+    display: flex;
+    /* border: 5px solid green; */
+}
+
+.piradi_form {
+    width: 60%;
+    /* padding: 35px 0; */
+    border-radius: 20px 0 0 0;
+    background: linear-gradient(to bottom, #ece4d9 0%, #e9dfd1 100%);
+}
+
+.arrow_back {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #dcd4c9 0%, #d6ccbd 100%);
+    box-shadow: -10px -10px 10px #f3efec,
+        13px 13px 15px #9a8f7c,
+        inset -5px -5px 5px #f1eeea,
+        inset 5px 5px 5px #9a8f7c;
+}
+
+.fa-angle-left {
+    font-size: 20px;
+    color: #FFFFFF;
+    filter: drop-shadow(1px 1px 2px #96691a);
+}
+
+/* აქ უნდა შევცვალო სიგანე */
+.piradi_form_inner {
+    width: 90%;
+    padding-top: 16px;
+    margin-inline: auto;
+    /* border: 5px solid black; */
+}
+
+.piradi_form_inner_title_page {
+    /* width: 95%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-bottom: 22px; */
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-image: linear-gradient(#fff, #d7c4a6, #7a5d2e) 100;
+    /* border: 3px solid red; */
+}
+
+
+.piradi_form_inner_title {
+    font-weight: 700;
+    font-size: 24px;
+    color: #f1ebe5;
+    text-shadow: 0 8px 9px #a38452, 0px -2px 1px #fff;
+}
+
+.piradi_form_inner_page {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.form1 {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 16px;
+    /* background-color: #98e37e; */
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.name_surname {
+    width: 100%;
+    /* margin-top: 77px; */
+    display: flex;
+    justify-content: space-between;
+    /* border: 5px solid yellow; */
+}
+
+.name_surname_box {
+    width: 50%;
+    /* border: 3px solid yellow; */
+}
+
+.label {
+    font-weight: 500;
+    font-size: 16px;
+    color: #c5a66e;
+    text-shadow: 0 1px 1px #2b1c02;
+    display: block;
+    margin-bottom: 8px;
+}
+
+#name,
+#surname,
+#email,
+#mobile_number {
+    width: 90%;
+    height: 46px;
+    background: transparent;
+    border: 1px solid #faf7f3;
+    border-radius: 4px;
+    outline: none;
+    box-shadow: inset 0px 0 5px #a38452;
+}
+
+
+#name.correct {
+    border: 1px solid #98e37e;
+}
+
+#name.wrong {
+    border: 1px solid #ef5050;
+}
+
+#surname.correct_sur {
+    border: 1px solid #98e37e;
+}
+
+#surname.wrong_sur {
+    border: 1px solid #ef5050;
+}
+
+.email_error_text,
+.min_size {
+    font-weight: 300;
+    font-size: 14px;
+    color: #2E2E2E;
+    margin-top: 8px;
+}
+
+.apload_photo {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+}
+
+.img_upload_label {
+    font-weight: 500;
+    font-size: 16px;
+    color: #c5a66e;
+    text-shadow: 0 1px 1px #2b1c02;
+}
+
+.image_upload {
+    width: 107px;
+    height: 27px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #1A1A1A;
+    line-height: 27px;
+    text-align: center;
+    /* background-color: #0E80BF; */
+    background-color: #96691a;
+    box-shadow: inset 2px 2px 5px rgb(39, 36, 36),
+        inset -1px -1px 5px rgb(246, 241, 241);
+    border-radius: 4px;
+    border: none;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.textarea_about_me {
+    width: 95%;
+    /* margin-top: 49px; */
+}
+
+#about_me {
+    resize: none;
+    width: 100%;
+    height: 103px;
+    background: transparent;
+    border: 1px solid #dbbd8e;
+    border-radius: 4px;
+    box-shadow: inset 0px 0 5px #a38452;
+    border: 1px solid #faf7f3;
+    outline: none;
+}
+
+
+.mail_number_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.email_box,
+.number_box {
+    width: 48%;
+    /* border: 10px solid rgb(84, 10, 232); */
+}
+
+#mobile_number.wrong {
+    border: 1px solid #ef5050;
+}
+
+#mobile_number.correct {
+    border: 1px solid #98e37e;
+}
+
+.error_box {
+    /* border: 2px solid red; */
+    position: relative;
+}
+
+
+#download_button {
+    width: 151px;
+    height: 48px;
+    background: #6B40E3;
+    border-radius: 4px;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+/* მარჯვენა მხარე სადაც აისახება შესაყვან ველებში ჩაწერილი ინფო */
+.piradi_result {
+    width: 40%;
+    height: 100%;
+    padding: 32px 2%;
+    border-radius: 0 20px 0 0;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aqua; */
+}
+
+.left_result_text {
+    width: 50%;
+    /* width: 432px; */
+    /* background-color: #cdf91d; */
+}
+
+.number_icone {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.eml {
+    margin-bottom: 10px;
+}
+
+.nmb {
+    margin-bottom: 34px;
+}
+
+.number_result,
+.email_result {
+    font-weight: 400;
+    font-size: 18px;
+    color: #1A1A1A;
+}
+
+#call,
+#EMAIL {
+    font-size: 17px;
+    color: #898989;
+}
+
+.name_surname_result_box {
+    width: 100%;
+    margin-bottom: 17px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    /* border: 5px solid red; */
+}
+
+.nameSurname {
+    font-weight: 700;
+    font-size: 34px;
+    color: #F93B1D;
+    /* border: 3px solid blue; */
+}
+
+.ABOUTME {
+    font-weight: 700;
+    font-size: 18px;
+    color: #F93B1D;
+    margin-bottom: 15px;
+}
+
+.ABOUTME_TEXT {
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.right_result_img {
+    width: 45%;
+    /* width: 246px; */
+    height: 216px;
+    /* border: 3px solid yellowgreen; */
+}
+
+.pirdadi_photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}

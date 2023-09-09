@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="https://kit.fontawesome.com/085bce8105.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>პირადი ინფოს გვერდი</title>
+</head>
+
+<body>
+    <div class="container2">
+
+        <!-- form and display sections -->
+        <div class="form_display_sections">
+            <!-- მარცხენა მხარე  -->
+            <div id="firstSectionId" class="piradi_form">
+                
+                <div class="piradi_form_inner">
+
+                    <div class="piradi_form_inner_title_page">
+                        <a class="arrow_back" href="index.html">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </a>
+                        <h3 class="piradi_form_inner_title">ᲞᲘᲠᲐᲓᲘ ᲘᲜᲤᲝ</h3>
+                    </div>
+
+
+                    <!-- ფორმა  -->
+                    <form id="user_form" class="form1" action="experience.html">
+
+
+                        <div class="name_surname">
+
+                            <!-- სახელის input  -->
+                            <div class="name_surname_box">
+                                <label for="name" class="label">სახელი</label>
+
+                                <div class="error_box">
+                                    <input type="text" id="name" name="name" placeholder="სახელი" required>
+                                    <i id="success_error_name" class="fa"></i>
+                                </div>
+                                <p class="error_message"></p>
+                            </div>
+
+
+                            <!-- გვარის input -->
+                            <div class="name_surname_box">
+                                <label for="surname" class="label">გვარი</label>
+
+                                <div class="error_box">
+                                    <input type="text" id="surname" name="surname" placeholder="გვარი" required>
+                                    <i id="success_error_surname" class="fa"></i>
+                                </div>
+
+                                <p class="error_message_surname"></p>
+                            </div>
+                        </div>
+
+                        <!-- ფოტო (file) upload  -->
+                        <div class="apload_photo">
+                            <h2 class="img_upload_label">პირადი ფოტოს ატვირთვა</h2>
+                            <label for="get_file" class="image_upload">ატვირთვა</label>
+                            <input type="file" id="get_file" accept="image/*" style="display: none;" name="file"
+                                required />
+                        </div>
+
+                        <!-- textarea ჩემს შესახებ  -->
+                        <div class="textarea_about_me">
+                            <label for="about_me" class="label">ჩემ შესახებ (არასავალდებულო)</label>
+                            <textarea name="about_me" id="about_me" placeholder="ზოგადი ინფო შენ შესახებ"></textarea>
+                        </div>
+
+                        <div class="mail_number_container">
+                            <!-- მეილი  -->
+                            <div class="email_box">
+                                <label id="email_label" for="email" class="label">ელ.ფოსტა</label>
+
+                                <div class="error_box">
+                                    <input type="email" id="email" name="email" required>
+                                    <i id="success_error_email" class="fa"></i>
+                                </div>
+
+                                <p class="email_error_text"></p>
+                            </div>
+
+                            <!-- ნომერი  -->
+                            <div class="number_box">
+                                <label for="mobile_number" class="label">მობილურის ნომერი</label>
+
+                                <div class="error_box">
+                                    <input type="tel" id="mobile_number" name="mobile_number" required>
+                                    <i id="success_error_mobile" class="fa"></i>
+                                </div>
+
+                                <p class="min_size"></p>
+                            </div>
+
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+            <!-- მარჯვენა მხარე სადაც აისახება შესაყვან ველებში ჩაწერილი ინფო -->
+            <div class="piradi_result" id="print_page">
+
+                <div class="left_result_text">
+
+
+                    <div class="name_surname_result_box">
+                        <p class="nameSurname" id="name_result"></p>
+                        <p class="nameSurname" id="surname_result"></p>
+                    </div>
+
+                    <div class="number_icone eml">
+                        <i id="EMAIL" class="fa"></i>
+                        <p class="email_result" id="value_email"></p>
+                    </div>
+
+                    <!-- აიქონი და ტექსტი -->
+                    <div class="number_icone nmb">
+                        <i id="call" class="fa"></i>
+                        <p class="number_result" id="value_number">
+                        </p>
+                    </div>
+
+                    <p id="aboutme_title" class="ABOUTME"></p>
+                    <p class="ABOUTME_TEXT" id="value_textarea"></p>
+                </div>
+
+                <div class="right_result_img">
+                    <img class="pirdadi_photo" id="uploadImg">
+                </div>
+            </div>
+        </div>
+
+        <!-- Download Button -->
+        <button id="download_button">Download Data</button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

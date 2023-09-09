@@ -1,0 +1,77 @@
+@media(max-width: 1500px) {
+    .nameSurname {
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 1250px) {
+
+    .piradi_form,
+    .piradi_result {
+        width: 50%;
+    }
+}
+
+@media(max-width: 940px) {
+    .form_display_sections {
+        margin: auto;
+        flex-direction: column;
+        row-gap: 16px;
+    }
+
+    .container2 {
+        height: auto;
+        row-gap: 16px;
+    }
+
+    .piradi_form,
+    .piradi_result {
+        width: 100%;
+    }
+
+    .piradi_result {
+        padding: 32px 5%;
+    }
+
+    .right_result_img {
+        width: 32%;
+    }
+}
+
+@media(max-width: 720px) {
+    .right_result_img {
+        width: 38%;
+    }
+}
+
+@media(max-width: 620px) {
+    .right_result_img {
+        width: 42%;
+    }
+}
+
+@media(max-width: 590px) {
+    .right_result_img {
+        width: 45%;
+        height: 180px;
+    }
+}
+
+@media(max-width: 440px) {
+    .mail_number_container {
+        flex-direction: column;
+    }
+
+    .email_box,
+    .number_box {
+        width: 100%;
+    }
+
+    .right_result_img {
+        width: 30%;
+        height: 110px;
+    }
+    .left_result_text{
+        width: 60%;
+    }
+}
